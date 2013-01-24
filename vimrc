@@ -15,7 +15,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'paster.vim'
 Bundle 'CRefVim'
-colorscheme koehler
+colorscheme badwolf
 
 
 filetype plugin indent on
