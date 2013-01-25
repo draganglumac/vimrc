@@ -11,10 +11,12 @@ Bundle 'Command-T'
 Bundle 'cscope.vim'
 Bundle 'SuperTab'
 Bundle 'badwolf'
+Bundle 'Syntastic'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'paster.vim'
 Bundle 'CRefVim'
+Bundle 'a.vim'
 colorscheme badwolf
 
 
