@@ -2,9 +2,6 @@ set nocompatible
 set laststatus=2
 set encoding=utf-8
 set t_Co=256
-set tabstop=4
-set shiftwidth=4
-set expandtab
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
