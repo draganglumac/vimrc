@@ -26,6 +26,11 @@ Bundle 'ctags.vim'
 colorscheme badwolf
 
 
+function CreateTags()
+    exec ':!ctags -R;echo Populated tags'
+endfunction
+nmap <F4> :call CreateTags()<CR>
+
 filetype plugin indent on
 set nu
 syntax on
