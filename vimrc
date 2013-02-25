@@ -3,6 +3,7 @@ set laststatus=2
 set encoding=utf-8
 set t_Co=256
 set tabstop=4
+set tags=./tags;/
 set shiftwidth=4
 set expandtab
 filetype off
@@ -21,6 +22,7 @@ Bundle 'paster.vim'
 Bundle 'CRefVim'
 Bundle 'a.vim'
 Bundle 'c.vim'
+Bundle 'ctags.vim'
 colorscheme badwolf
 
 
