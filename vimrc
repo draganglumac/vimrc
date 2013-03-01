@@ -7,6 +7,7 @@ set dir=/tmp
 set tabstop=4
 set tags=./tags;/
 set shiftwidth=4
+set backspace=indent,eol,start
 set expandtab
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -26,12 +27,6 @@ Bundle 'a.vim'
 Bundle 'c.vim'
 Bundle 'ctags.vim'
 colorscheme badwolf
-
-
-function CreateTags()
-    exec ':!ctags -R;echo Populated tags'
-endfunction
-nmap <F4> :call CreateTags()<CR>
 
 filetype plugin indent on
 set nu
