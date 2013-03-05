@@ -26,6 +26,8 @@ Bundle 'CRefVim'
 Bundle 'a.vim'
 Bundle 'c.vim'
 Bundle 'ctags.vim'
+Bundle 'WEBAPI.vim'
+Bundle 'Gist.vim'
 colorscheme badwolf
 
 filetype plugin indent on
