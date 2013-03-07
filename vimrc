@@ -25,7 +25,7 @@ Bundle 'CRefVim'
 Bundle 'a.vim'
 Bundle 'c.vim'
 Bundle 'ctags.vim'
-Bundle 'WEBAPI.vim'
+Bundle 'WebAPI.vim'
 Bundle 'Gist.vim'
 colorscheme badwolf
 
