@@ -8,7 +8,6 @@ set tabstop=4
 set tags=./tags;/
 set shiftwidth=4
 set backspace=indent,eol,start
-set expandtab
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
