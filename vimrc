@@ -5,15 +5,19 @@ set t_Co=256
 set swapfile
 set dir=/tmp
 set tabstop=4
-set tags=./tags;/
+set tags+=~/.vim/tags/stl      
+set tags+=~/.vim/tags/gl      
+set tags+=~/.vim/tags/sdl      
+set tags+=~/.vim/tags/qt4   
+
+set softtabstop=4
 set shiftwidth=4
 set backspace=indent,eol,start
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
+let g:gist_use_password_in_gitconfig = 1
 Bundle 'gmarik/vundle'
-Bundle 'Command-T'
 Bundle 'cscope.vim'
 Bundle 'SuperTab'
 Bundle 'badwolf'
