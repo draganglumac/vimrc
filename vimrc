@@ -32,6 +32,7 @@ Bundle 'ctags.vim'
 Bundle 'WebAPI.vim'
 Bundle 'Gist.vim'
 Bundle 'DoxygenToolkit.vim'
+Bundle 'vim-scripts/renamer.vim'
 colorscheme badwolf
 let g:DoxygenToolKit_briefTag_pre="@fn "
 filetype plugin indent on
