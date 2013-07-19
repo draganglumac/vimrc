@@ -2,12 +2,9 @@ set nocompatible
 set laststatus=2
 set encoding=utf-8
 set t_Co=256
-set swapfile
-set dir=/tmp
 set tabstop=4
-set tags=./tags;/
 set shiftwidth=4
-set backspace=indent,eol,start
+set expandtab
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -24,11 +21,12 @@ Bundle 'paster.vim'
 Bundle 'CRefVim'
 Bundle 'a.vim'
 Bundle 'c.vim'
-Bundle 'ctags.vim'
-Bundle 'WebAPI.vim'
-Bundle 'Gist.vim'
+Bundle 'vim-ruby/vim-ruby'
 colorscheme badwolf
+
 
 filetype plugin indent on
 set nu
 syntax on
+
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2

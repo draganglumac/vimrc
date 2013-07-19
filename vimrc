@@ -38,3 +38,6 @@ let g:DoxygenToolKit_briefTag_pre="@fn "
 filetype plugin indent on
 set nu
 syntax on
+autocmd VimEnter * NERDTree | wincmd p
+let g:NERDTreeWinSize=25
+autocmd FileType ruby setl tabstop=2 shiftwidth=2 expandtab
