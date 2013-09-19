@@ -42,3 +42,5 @@ autocmd VimEnter * NERDTree | wincmd p
 let g:NERDTreeWinSize=25
 autocmd FileType ruby setl tabstop=2 shiftwidth=2 expandtab
 let g:syntastic_always_populate_loc_list = 1
+set splitright
+set splitbelow
