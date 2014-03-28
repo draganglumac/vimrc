@@ -37,6 +37,9 @@ colorscheme badwolf
 let g:DoxygenToolKit_briefTag_pre="@fn "
 filetype plugin indent on
 set nu
+set hlsearch
+" Press space to turn off highlighting and clear any message
+:nnoremap <silent> <Space> :nohlsearch<Bar>echo<CR>
 syntax on
 autocmd VimEnter * NERDTree | wincmd p
 let g:NERDTreeWinSize=25
