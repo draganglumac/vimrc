@@ -1,5 +1,6 @@
 set nocompatible
 set laststatus=2
+set fileencoding=utf-8
 set encoding=utf-8
 set t_Co=256
 set swapfile
@@ -16,26 +17,28 @@ set backspace=indent,eol,start
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-let g:gist_use_password_in_gitconfig = 1
-Bundle 'gmarik/vundle'
-Bundle 'cscope.vim'
-Bundle 'SuperTab'
-Bundle 'badwolf'
-Bundle 'Syntastic'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'scrooloose/nerdtree'
-Bundle 'paster.vim'
-Bundle 'CRefVim'
-Bundle 'a.vim'
-Bundle 'c.vim'
-Bundle 'ctags.vim'
-Bundle 'WebAPI.vim'
-Bundle 'Gist.vim'
-Bundle 'DoxygenToolkit.vim'
-Bundle 'vim-scripts/renamer.vim'
-Bundle 'airblade/vim-gitgutter'
+
+Plugin 'gmarik/vundle'
+Plugin 'cscope.vim'
+Plugin 'SuperTab'
+Plugin 'badwolf'
+Plugin 'Syntastic'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'paster.vim'
+Plugin 'CRefVim'
+Plugin 'a.vim'
+Plugin 'c.vim'
+Plugin 'ctags.vim'
+Plugin 'WebAPI.vim'
+Plugin 'Gist.vim'
+Plugin 'DoxygenToolkit.vim'
+Plugin 'vim-scripts/renamer.vim'
+Plugin 'airblade/vim-gitgutter'
+
 colorscheme badwolf
 let g:DoxygenToolKit_briefTag_pre="@fn "
+let g:gist_use_password_in_gitconfig = 1
 filetype plugin indent on
 set nu
 set hlsearch
