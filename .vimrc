@@ -36,6 +36,7 @@ Plugin 'Gist.vim'
 Plugin 'DoxygenToolkit.vim'
 Plugin 'vim-scripts/renamer.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'Shougo/unite.vim'
 
 colorscheme badwolf
 let g:DoxygenToolKit_briefTag_pre="@fn "
