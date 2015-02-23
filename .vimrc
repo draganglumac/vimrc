@@ -5,14 +5,15 @@ set encoding=utf-8
 set t_Co=256
 set swapfile
 set dir=/tmp
-set tabstop=4
+set tabstop=2
 set tags+=~/.vim/tags/stl      
 set tags+=~/.vim/tags/gl      
 set tags+=~/.vim/tags/sdl      
 set tags+=~/.vim/tags/qt4   
 
-set softtabstop=4
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
+set expandtab
 set backspace=indent,eol,start
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim

@@ -13,9 +13,10 @@ set tags+=~/.vim/tags/qt4
 
 set softtabstop=2
 set shiftwidth=2
+set expandtab
 set backspace=indent,eol,start
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 Plugin 'gmarik/vundle'
