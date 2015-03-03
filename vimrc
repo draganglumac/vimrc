@@ -16,7 +16,8 @@ set shiftwidth=2
 set expandtab
 set backspace=indent,eol,start
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+" set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 Plugin 'gmarik/vundle'
