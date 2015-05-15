@@ -16,11 +16,11 @@ set shiftwidth=2
 set expandtab
 set backspace=indent,eol,start
 filetype off
-" set rtp+=~/.vim/bundle/Vundle.vim
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+" set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'cscope.vim'
 Plugin 'SuperTab'
 Plugin 'badwolf'
@@ -39,6 +39,8 @@ Plugin 'vim-scripts/renamer.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Shougo/unite.vim'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
 
 colorscheme badwolf
 let g:DoxygenToolKit_briefTag_pre="@fn "
