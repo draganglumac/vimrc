@@ -39,6 +39,7 @@ Plugin 'vim-scripts/renamer.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Shougo/unite.vim'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'udalov/kotlin-vim'
 
 colorscheme badwolf
 let g:DoxygenToolKit_briefTag_pre="@fn "
