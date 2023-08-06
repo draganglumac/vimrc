@@ -296,3 +296,6 @@ fi
 
 export PATH=/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS:$PATH
 
+export PATH=$PATH:$HOME/.maestro/bin
+source $HOME/.zsh-linkerd
+
