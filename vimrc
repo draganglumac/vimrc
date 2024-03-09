@@ -1,3 +1,4 @@
+let g:powerline_pycmd="py3"
 set nocompatible
 set laststatus=2
 set fileencoding=utf-8
@@ -16,32 +17,37 @@ set shiftwidth=2
 set expandtab
 set backspace=indent,eol,start
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-" set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/plugged
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'cscope.vim'
-Plugin 'SuperTab'
-Plugin 'badwolf'
-Plugin 'Syntastic'
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'scrooloose/nerdtree'
-Plugin 'paster.vim'
-Plugin 'CRefVim'
-Plugin 'a.vim'
-Plugin 'c.vim'
-Plugin 'ctags.vim'
-Plugin 'WebAPI.vim'
-Plugin 'Gist.vim'
-Plugin 'DoxygenToolkit.vim'
-Plugin 'vim-scripts/renamer.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'Shougo/unite.vim'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'udalov/kotlin-vim'
+call plug#begin('~/.vim/plugged')
+  
+Plug 'vim-scripts/cscope.vim'
+Plug 'vim-scripts/SuperTab'
+" You have to symlink .vim/plugged/badwolf/colors/badwolf.vim to .vim/colors/badwolf.vim
+Plug 'vim-scripts/badwolf'
+Plug 'tomasiser/vim-code-dark'
+Plug 'vim-scripts/Syntastic'
+Plug 'Lokaltog/vim-powerline'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-scripts/paster.vim'
+Plug 'vim-scripts/CRefVim'
+Plug 'vim-scripts/a.vim'
+Plug 'vim-scripts/c.vim'
+Plug 'vim-scripts/ctags.vim'
+Plug 'vim-scripts/WebAPI.vim'
+Plug 'vim-scripts/Gist.vim'
+Plug 'vim-scripts/DoxygenToolkit.vim'
+Plug 'vim-scripts/renamer.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'Shougo/unite.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'udalov/kotlin-vim'
+Plug 'hashivim/vim-terraform'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
-colorscheme badwolf
+"colorscheme badwolf
+colorscheme codedark
 let g:DoxygenToolKit_briefTag_pre="@fn "
 let g:gist_use_password_in_gitconfig = 1
 filetype plugin indent on
@@ -56,6 +62,31 @@ autocmd FileType ruby setl tabstop=2 shiftwidth=2 expandtab
 let g:syntastic_always_populate_loc_list = 1
 set splitright
 set splitbelow
+
+" haskell-vim options
+" -- Features --
+let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
+let g:haskell_enable_recursivedo = 1      " to enable highlighting of `mdo` and `rec`
+let g:haskell_enable_arrowsyntax = 1      " to enable highlighting of `proc`
+let g:haskell_enable_pattern_synonyms = 1 " to enable highlighting of `pattern`
+let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
+let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
+let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
+" -- Highlighting --
+" g:haskell_classic_highlighting = 1 " enable classic higlighting, use only if
+" opinionated highlighting gets on your nerves
+" -- Indentation --
+"  Haskell
+let g:haskell_indent_if = 3
+let g:haskell_indent_case = 2
+let g:haskell_indent_let = 4
+let g:haskell_indent_where = 6
+let g:haskell_indent_do = 3
+let g:haskell_indent_in = 1
+let g:haskell_indent_guard = 2
+let g:haskell_indent_case_alternative = 1
+" Cabal
+let g:cabal_indent_section = 2
 
 " ----------------------
 " cscope.vim keybindings
@@ -79,3 +110,4 @@ nnoremap  <leader>ff :call cscope#find('f', expand('<cword>'))<CR>
 " i: Find files #including this file
 nnoremap  <leader>fi :call cscope#find('i', expand('<cword>'))<CR>
 
+call plug#end()
