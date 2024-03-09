@@ -45,6 +45,7 @@ Plug 'udalov/kotlin-vim'
 Plug 'hashivim/vim-terraform'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 "colorscheme badwolf
 colorscheme codedark
